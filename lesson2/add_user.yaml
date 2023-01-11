@@ -1,0 +1,4 @@
+---
+- hosts: localhosts
+  roles:
+    - mk_user

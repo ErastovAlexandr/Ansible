@@ -1,0 +1,12 @@
+---
+- file:
+    path: /tmp/dir
+    state: directory
+
+- copy:
+    dest: /tmp/dir/textfile.txt
+    content: "{{ file_content }}"
+
+- uri:
+    url: https://raw.githubusercontent.com/ansible/ansible/devel/README.rst
+    dest: /tmp/dir  

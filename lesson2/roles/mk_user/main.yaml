@@ -1,0 +1,7 @@
+---
+  - name: User add
+    user:
+      name: ya
+      password: alert
+      shell: /bin/bash
+      groups : sudo
